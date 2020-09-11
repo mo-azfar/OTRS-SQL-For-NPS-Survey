@@ -29,7 +29,7 @@
 		JOIN survey_question sq ON (sr.survey_id=sq.id AND sq.question_type IN ('NPS'))	
 
 
-[COUNT BY AGENT]
+3. [COUNT BY AGENT]
 
 		SELECT TICKET_OWNER,
 		COUNT(DISTINCT(TID)) AS SENT_SURVEY_BY_TICKET,
